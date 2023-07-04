@@ -1,0 +1,148 @@
+<!-- Utilizado para definir que este documento segue as regras de sintaxe do HTML 5 -->
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Formulário</title>
+		
+		<!-- Definição de codificação de caracteres. Recomenda-se usar sempre UTF-8 -->
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		
+		
+		<!-- Título centralizado -->
+		<h1 align="center">
+		<a	href="../index.html">Início |</a>
+		<a	href="pagina2.html">Página 2 |</a>
+		<a	href="pagina3.html">Página 3 |</a>
+		<a	href="pagina4.html">Página 4 |</a>
+		<a	href="pagina5.html">Página 5 |</a>
+		<a	href="pagina6.html">Página 6 |</a>
+				
+		</h1>
+			
+		<!-- Elemento de linha horizontal -->
+		<hr>
+		<h2 align="center">Cadastro de cliente</h2>
+		<table align="center" border="1"> 
+		<tr>
+		<td colspan="2" align="center">
+		<h3>Todos os campos são obrigatórios</h3>
+		</td>
+		<tr>
+		<thead>
+		<tbody>
+		<tr> <!-- Início da Linha-->
+		<td align="right">
+		<h3><label>Nome:</label></h3>
+		</td>
+		<td align="left">
+		<input type="text" name="nome" required maxlength="20"/> <!-- maxlength= quantidade de caracteres-->
+		</td>
+		</tr><!-- Fim da Linha-->
+		<tr> <!-- Início da Linha-->
+			<td align="right">
+			<h3><label>Sobrenome:</label></h3>
+			</td>
+			<td align "left">
+			<input type="text" name="sobrenome" required size="30" <!-- size= tamanho do campo-->
+		</tr><!-- Fim da Linha-->
+		<tr> <!-- Início da Linha-->
+			<td align="right">
+			<h3><label>Data de nascimento:</label></h3> <!--required = campo obrigatório-->
+			</td>
+			<td align "left">
+			<input type="date" name="datanasc" required />  
+		</tr><!-- Fim da Linha-->
+		<tr> <!-- Início da Linha-->
+			<td align="right">
+			<h3><label>Endereço:</label></h3>
+			</td>
+			<td align "left">
+			<input type="text" name="endereco" required size="30" 
+		</tr><!-- Fim da Linha-->
+		<tr> <!-- Início da Linha-->
+			<td align="right">
+			<h3><label>Bairro:</label></h3>
+			</td>
+			<td align "left">
+			<input type="text" name="bairro" required size="30" 
+		</tr><!-- Fim da Linha-->
+		<tr> <!-- Início da Linha-->
+			<td align="right">
+			<h3><label>cidade:</label></h3>
+			</td>
+			<td align "left">
+			<input type="text" name="cidade" required size="30" 
+		</tr><!-- Fim da Linha-->
+		<tr>
+		<td align="right">
+			<h3><label>estado:</label></h3>
+			</td>
+			<td align="left">
+			<select name="estado" required>
+			<option selected="" value="">Selecione o Estado (UF)</option> <!-- selected = é o que vai aparecer na caixa de seleção-->
+			<option value="Acre">Acre</option>
+			<option value="Alagoas">Alagoas</option>
+			<option value="Amapá">Amapá</option>
+			<option value="Amazonas">Amazonas</option>
+			<option value="Bahia">Bahia</option>
+			<option value="Ceará">Ceará</option>
+			<option value="Distrito Federal">Distrito Federal</option>
+			<option value="Espírito Santo">Espírito Santo</option>
+			<option value="Goiás">Goiás</option>
+			<option value="Maranhão">Maranhão</option>
+			<option value="Mato Grosso">Mato Grosso</option>
+			<option value="Mato Grosso do Sul">Mato Grosso do Sul</option>
+			<option value="Minas Gerais">Minas Gerais</option>
+			<option value="Pará">Pará</option>
+			<option value="Paraíba">Paraíba</option>
+			<option value="Paraná">Paraná</option>
+			<option value="Pernambuco">Pernambuco</option>
+			<option value="Piauí">Piauí</option>
+			<option value="Rio de Janeiro">Rio de Janeiro</option>
+			<option value="Rio Grande do Sul" >Rio Grande do Sul</option>
+			<option value="Rio Grande do Norte">Rio Grande do Norte</option>
+			<option value="Rondônia">Rondônia</option>
+			<option value="Roraima">Roraima</option>
+			<option value="Santa Catarina">Santa Catarina</option>
+			<option value="São Paulo">São Paulo</option>
+			<option value="Sergipe">Sergipe</option>
+			<option value="Tocantins">Tocantins</option>	
+			</select>
+			</td>
+		</tr>
+		<tr> <!-- Início da Linha-->
+			<td align="right">
+			<h3><label>Sexo:</label></h3>
+			</td>
+			<td align "left">
+			<input type="radio" name="sexo" value="M"/>Masculino
+			<input type="radio" name="sexo" value="F" checked />Feminino
+				
+		</tr><!-- Fim da Linha-->
+		</tbody>
+		
+		</table>
+		
+		<form action="./cadastro.php" method="post">
+		
+		
+		<hr>
+		<br>
+		<a href="https://pt-br.facebook.com/" target="black">
+		<img src="../imagens/logoface.png" alt="Facebook" width="68"
+		height="68" align="left" hspace="8" title="Facebook">
+		</a>
+		<a href="https://www.instagram.com/" target="black">
+		<img src="../imagens/logoinst.png" alt="Instagram" width="68"
+		height="68" align="left" hspace="8" title="Instagram">
+		</a>
+		<a href="https://twitter.com/" target="black">
+		<img src="../imagens/logotwi.png" alt="Twitter" width="68"
+		height="68" align="left" hspace="8" title="Twitter">
+		</a>
+		
+
+	</body>
+</html>

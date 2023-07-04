@@ -24,14 +24,15 @@
 		<!-- Elemento de linha horizontal -->
 		<hr>
 		<h2 align="center">Cadastro de cliente</h2>
-		<table align="center" border="1"> 
+		<form>
+		<table align="center" > 
 		<tr>
 		<td colspan="2" align="center">
 		<h3>Todos os campos são obrigatórios</h3>
 		</td>
 		<tr>
 		<thead>
-		<tbody>
+		<tbody>  <!--Início do corpo da Tabela-->
 		<tr> <!-- Início da Linha-->
 		<td align="right">
 		<h3><label>Nome:</label></h3>
@@ -117,11 +118,57 @@
 			<h3><label>Sexo:</label></h3>
 			</td>
 			<td align "left">
-			<input type="radio" name="sexo" value="M"/>Masculino
+			<input type="radio" name="sexo" value="M"/>Masculino <!-- o que for colocado no campo value irá ser usado no banco de dados-->
 			<input type="radio" name="sexo" value="F" checked />Feminino
 				
 		</tr><!-- Fim da Linha-->
-		</tbody>
+		<tr> <!-- Início da Linha-->
+			<td align="right">
+			<h3><label>Celular:</label></h3>
+			</td>
+			<td align "left">
+			<input type="tel" name="celular" required size="30" 
+		</tr><!-- Fim da Linha-->
+		<tr> <!-- Início da Linha-->
+			<td align="right">
+			<h3><label>E-mail:</label></h3>
+			</td>
+			<td align "left">
+			<input type="email" name="email" required placeholder="nome@dominio.com" <!-- o placeholder é uma máscara. neste caso, irá aparecer a forma como o email deve ser informado-->
+		</tr><!-- Fim da Linha-->
+		<tr> <!-- Início da Linha-->
+			<td align="right">
+			<h3><label>usuário:</label></h3>
+			</td>
+			<td align "left">
+			<input type="text" name="usuário" required="30" 
+		</tr><!-- Fim da Linha-->
+		<tr> <!-- Início da Linha-->
+			<td align="right">
+			<h3><label>Senha:</label></h3>
+			</td>
+			<td align "left">
+			<input type="password" name="senha" required /><!-- Fim da Linha-->
+			<tr> <!-- Início da Linha-->
+			<td align="right">
+			<h3><label>Observação:</label></h3>
+			</td>
+			<td align "left">
+			<textarea name= "obs" rows="4" cols="30">	
+			</textarea>
+		</tr><!-- Fim da Linha-->
+		</tbody> <!--Fim do corpo da Tabela-->
+		</form>
+		<tfoot>
+		<tr> <!-- Início da Linha-->
+			<td colspan="2" align="center">
+			<br />
+			<input type="submit" value="cadastrar" />
+			<input type="submit" value="Limpar" />
+			</td>
+			
+		</tr><!-- Fim da Linha-->
+		</tfoot>
 		
 		</table>
 		
